@@ -7,6 +7,7 @@ import com.security.springsecurityproject.data.model.Roles;
 import com.security.springsecurityproject.data.model.User;
 import com.security.springsecurityproject.data.repository.UserRepo;
 import jakarta.annotation.PostConstruct;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -19,6 +20,7 @@ import java.util.List;
 import java.util.Set;
 
 @Service
+@Slf4j
 public class UserService {
     @Autowired
     private UserRepo userRepo;
